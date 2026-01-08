@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Chicken Hop Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="splash-screen">
+        <div class="splash-content">
+            <h1>CHICKEN<br>HOP</h1>
+            <div class="splash-icon">🐔</div>
+            <p>TOQUE PARA COMEÇAR</p>
+        </div>
+    </div>
+
+    <div id="ui-layer" style="display: none;">
+        <div id="menu">
+            <h2>DIFICULDADE</h2>
+            <div class="color-selector">
+                <div class="color-container">
+                    <div class="color-opt white" onclick="selectColor('white', 0.8)"></div>
+                    <span>FÁCIL</span>
+                </div>
+                <div class="color-container">
+                    <div class="color-opt yellow active" onclick="selectColor('yellow', 1.2)"></div>
+                    <span>MÉDIO</span>
+                </div>
+                <div class="color-container">
+                    <div class="color-opt black" onclick="selectColor('black', 2.0)"></div>
+                    <span>DIFÍCIL</span>
+                </div>
+            </div>
+            <button id="btn-start" class="btn-jogar-bonito">JOGAR AGORA</button>
+        </div>
+    </div>
+
+    <div id="game-container">
+        <div id="day-night-filter"></div>
+        <div id="score-container">
+            <div id="score">0</div>
+            <div id="best-score">Recorde: 0</div>
+        </div>
+        <div id="water"></div>
+        <div id="grass-floor"></div>
+        <div id="chicken">
+            <div class="eye"></div>
+            <div class="beak"></div>
+            <div class="comb"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
